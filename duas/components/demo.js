@@ -1,7 +1,9 @@
+import { CiHome } from "react-icons/ci";
+import { AiOutlineAppstore } from "react-icons/ai";
 export const dua = [
   {
     label: "Dua's Importance",
-
+    icon: <CiHome className="text-white h-2 w-2" />,
     href: "/duas",
     children: [
       {

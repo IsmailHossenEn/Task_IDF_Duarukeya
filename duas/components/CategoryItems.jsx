@@ -11,25 +11,18 @@ const CategoryItems = ({ item }) => {
     });
   };
   return (
-    <li>
+    <li className="cursor-pointer mx-2">
       <div className="flex items-center">
         <p
+          onClick={() => handleToggleChildren(item.label)}
           className={
             item.children
-              ? "p-1 bg-black text-white rounded-sm text-[18px] "
-              : "bg-gray-600 p-1 text-[16px]  text-white rounded-sm"
+              ? "p-1 bg-[#E2E2E2] text-[#1FA45B] pl-10 text-[18px] w-full h-[70px] items-center flex rounded-xl"
+              : "bg-gray-600 p-1 text-[16px] pl-10 text-white rounded-sm cursor-pointer w-full "
           }
         >
           {item.label}
         </p>{" "}
-        {item && item.children && item.children.length ? (
-          <span
-            className="p-1 bg-black text-white rounded-sm"
-            onClick={() => handleToggleChildren(item.label)}
-          >
-            {currentchildren[item.label] ? "-" : "+"}
-          </span>
-        ) : null}
       </div>
       <div className="py-1 px-5">
         {item &&
