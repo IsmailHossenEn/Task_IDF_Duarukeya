@@ -3,7 +3,7 @@ import CategoryItems from "./CategoryItems";
 
 const CategorieList = ({ list = [] }) => {
   return (
-    <ul>
+    <ul className="py-2">
       {list && list.length
         ? list.map((listItem) => <CategoryItems item={listItem} />)
         : null}

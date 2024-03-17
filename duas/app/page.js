@@ -1,5 +1,5 @@
 import Categories from "@/components/Categories";
-import { demo } from "../demo";
+import { dua } from "@/components/demo";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         <div className="text-center py-6 w-full bg-[#1FA45B]">
           <h1 className="text-white font-semibold text-lg">Categories</h1>
         </div>
-        <Categories demo={demo} />
+        <Categories demo={dua} />
       </div>
       <div className="w-[500px] h-[500px] bg-white"></div>
     </main>

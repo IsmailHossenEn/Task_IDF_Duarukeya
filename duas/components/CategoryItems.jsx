@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import CategorieList from "./CategorieList";
 
 const CategoryItems = ({ item }) => {
   const [currentchildren, setcurrentChildren] = useState({});
@@ -34,7 +36,7 @@ const CategoryItems = ({ item }) => {
         item.children &&
         item.children.length > 0 &&
         currentchildren[item.label] ? (
-          <MenuList list={item.children} />
+          <CategorieList list={item.children} />
         ) : null}
       </div>
     </li>
